@@ -70,3 +70,20 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+// Task 1
+console.log("Task 1 ----------");
+
+hogwarts
+  .filter((e) => e.house === "Gryffindor")
+  .map((person) => {
+    let { firstName, lastName } = person;
+    console.log(`${firstName} ${lastName}`);
+  });
+
+console.log("\nTask 2 ----------");
+hogwarts
+  .filter((e) => e.occupation === "Teacher" && e.pet !== null)
+  .map((person) => {
+    let { firstName, lastName } = person;
+    console.log(`${firstName} ${lastName}`);
+  });

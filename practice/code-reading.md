@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+The variable x defined in line is in the global scope and accessible throughout, whereas variable x defined in line 3 is in local scope and limited to the function.
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Line 32 will output 10 and line 33 will return undefined as variable y is not accessible outside the function and scoped to it.
 
 ## Question 3
 
@@ -62,3 +64,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+The variable x defined in line 43 will not change as any changes in the f1 function is scoped to it.
+The variable y logged in line 62 will change to 10 as when we define an object and use it in a function, it changes the original defined value as it is passes as a reference to the function.
